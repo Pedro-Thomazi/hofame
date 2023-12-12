@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <script src="js/script.js" defer></script>
+  <title>HoFame</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="#" class="logo">
+      <img id="minLogo" src="./imgs/logoMin.png" alt="Logo">
+    </a>
+
+    <button id="btnList"><i class="bi bi-list"></i></button>
+    <nav id="navbar">
+      <div class="list">
+        <button id="closeList"><i class="bi bi-x-lg"></i></button>
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#pastas">Massas</a>
+        <a class="link" href="#sweets">Doces</a>
+        <a class="link" href="#footer">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slide image -->
+  <div id="sliderImgs">
+    <input type="radio" name="imagesSlide" id="img1">
+    <input type="radio" name="imagesSlide" id="img2">
+    <input type="radio" name="imagesSlide" id="img3">
+    <div class="images">
+      <img src="./imgs/imgSlide1.jpg" alt="img1">
+      <img src="./imgs/imgSlide2.jpg" alt="img2">
+      <img src="./imgs/imgSlide3.jpg" alt="img3">
+    </div>
+    <div class="labels">
+      <label for="img1"></label>
+      <label for="img2"></label>
+      <label for="img3"></label>
+    </div>
+    <div class="btns">
+      <button id="btnPrev"><i class="bi bi-chevron-left"></i></button>
+      <button id="btnNext"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Massas -->
+  <section id="pastas">
+    <div class="content">
+      <div class="text">
+        <h2>As Delícias da Tradição Italiana: Uma Viagem Gastronômica pelas Massas</h2>
+        <p> No coração dessa tradição culinária estão as massas, verdadeiras obras de arte que conquistaram paladares ao
+          redor do globo. Entre as diversas variedades, destacam-se a pizza e o macarrão, símbolos emblemáticos da
+          gastronomia italiana.
+        </p>
+
+        <button id="btnClose" class="button"><i class="bi bi-x-lg"></i></button>
+        <div id="alterDescription" class="description descriptionPasta">
+          <h2>Receitas</h2>
+        </div>
+      </div>
+      <div class="pastasImg">
+        <a href="#alterDescription" id="revenue1" class="containerImgs pastasContainer">
+          <img src="./imgs/imagem2.jpg" alt="pasta1">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Calzone de Queijo</h4>
+          </div>
+        </a>
+        <a href="#alterDescription" id="revenue2" class="containerImgs pastasContainer">
+          <img src="./imgs/imagem3.jpg" alt="pasta2">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Macarrão</h4>
+          </div>
+        </a>
+        <a href="#alterDescription" id="revenue3" class="containerImgs pastasContainer">
+          <img src="./imgs/imagem5.jpg" alt="pasta3">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Pizza de Pepperoni</h4>
+          </div>
+        </a>
+        <a href="#alterDescription" id="revenue4" class="containerImgs pastasContainer">
+          <img src="./imgs/imagem6.jpg" alt="pasta4">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Pizza de Caponata</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doces -->
+  <section id="sweets">
+    <div class="content">
+      <div class="text">
+        <h2>Dolci Italiani: Uma Celebração dos Sabores Doces da Itália</h2>
+        <p> A Itália, conhecida por sua rica tradição culinária, presenteia o mundo não apenas com massas incríveis, mas também com uma variedade irresistível de doces que conquistam corações e paladares exigentes. Dos gelatos refrescantes aos tradicionais cannoli e aos delicados pignoli, os dolci italianos são verdadeiras obras-primas que encantam desde os amantes de sobremesas mais simples até os mais sofisticados.
+        </p>
+
+        <button id="btnClose2" class="button"><i class="bi bi-x-lg"></i></button>
+        <div id="alterDescriptionSweets" class="description descriptionSweet">
+          <h2>Receitas</h2>
+        </div>
+      </div>
+      <div id="sweetImg" class="pastasImg">
+        <a href="#alterDescriptionSweets" id="sweetRevenue1" class="containerImgs sweetsContainer">
+          <img src="./imgs/sweetImagem1.jpg" alt="pasta1">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Gelato</h4>
+          </div>
+        </a>
+        <a href="#alterDescriptionSweets" id="sweetRevenue2" class="containerImgs sweetsContainer">
+          <img src="./imgs/sweetImagem2.jpg" alt="pasta2">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Cannoli</h4>
+          </div>
+        </a>
+        <a href="#alterDescriptionSweets" id="sweetRevenue3" class="containerImgs sweetsContainer">
+          <img src="./imgs/sweetImagem3.png" alt="pasta3">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Pignoli</h4>
+          </div>
+        </a>
+        <a href="#alterDescriptionSweets" id="sweetRevenue4" class="containerImgs sweetsContainer">
+          <img src="./imgs/sweetImagem4.jpg" alt="pasta4">
+          <i class="bi bi-search"></i>
+          <div class="name">
+            <h4>Tiramisù</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="thankDiv">
+      <h4>Grazie Mille - Muito Obrigado</h4>
+      <p>Agradecemos por escolher nossas receitas! Se tiver mais ideias, compartilhe conosco. Estamos aqui para inspirar seus momentos culinários!</p>
+      <p>Com gratidão,</p>
+      <h4 class="nameLogo">Equipe <span class="ho">Ho</span><span class="fa">Fa</span><span class="me">me</span></h4>
+    </div>
+    <div class="contactDiv">
+      <h4>Contatto - Entre em Contato</h4>
+      <p><i class="bi bi-telephone-fill"></i>(11)9999-9999</p>
+      <p><i class="bi bi-envelope-fill"></i>hofame@hotmail.com.br</p>
+      <p><i class="bi bi-geo-alt-fill"></i>Rua das Serenatas Azuis - 1234</p>
+    </div>
+  </footer>
+</body>
+
+</html>
